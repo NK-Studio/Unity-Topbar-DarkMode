@@ -10,7 +10,8 @@ Windows 환경의 유니티 에디터 상단 바(Title Bar, Menu Bar)를 세련�
 
 ## 📸 Preview
 
-*(여기에 유니티 에디터 다크 모드 적용 스크린샷이 들어갈 예정입니다)*
+<img width="3839" height="2046" alt="image" src="https://github.com/user-attachments/assets/a631bf9c-6ce6-48c2-b7c8-bcece7230669" />
+
 
 ---
 
