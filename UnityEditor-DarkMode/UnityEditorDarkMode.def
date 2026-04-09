@@ -1,0 +1,4 @@
+LIBRARY UnityEditorDarkMode
+EXPORTS
+   DllMain @1
+   SetThemeMode @2
