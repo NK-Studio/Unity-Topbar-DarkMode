@@ -10,7 +10,8 @@ Windows 기반 유니티 에디터의 상단 타이틀 바와 메뉴 바를 세�
 
 ## 📸 Screenshots
 
-*(여기에 유니티 에디터 상단 타이틀 바 스크린샷이 들어갈 예정입니다)*
+<img width="3839" height="2046" alt="image" src="https://github.com/user-attachments/assets/01f58d07-f7af-4885-af3f-98a14ac296b8" />
+
 
 ---
 
