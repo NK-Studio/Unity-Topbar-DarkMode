@@ -34,6 +34,34 @@ Windows 기반 유니티 에디터의 상단 타이틀 바와 메뉴 바를 세�
 
 ---
 
+## 🎨 How to change the theme? (INI)
+
+첫 실행 후, DLL이 있는 디렉토리에 `UnityEditorDarkMode.dll.ini` 파일이 생성됩니다. 이 파일의 값을 수정하여 테마 색상을 변경할 수 있습니다 (수정 후 에디터 재시작 필요).
+
+```ini
+menubar_textcolor = 200,200,200
+menubar_textcolor_disabled = 160,160,160
+menubar_bgcolor = 48,48,48
+menubaritem_bgcolor = 48,48,48
+menubaritem_bgcolor_hot = 62,62,62
+menubaritem_bgcolor_selected = 62,62,62
+```
+
+---
+
+## 🛠 How to build it? (C++)
+
+직접 DLL을 빌드하고 싶다면 `UnityEditor-DarkMode` 폴더에서 다음 과정을 수행하세요:
+
+1. `CMake`, `Visual Studio`, `MSVC toolchain`이 설치되어 있어야 합니다.
+2. 터미널에서 다음 명령을 실행합니다:
+   ```cmd
+   cmake -B build && cmake --build build --config Release
+   ```
+3. 빌드 성공 시 `build\Release` 디렉토리에 `UnityEditorDarkMode.dll`이 생성됩니다.
+
+---
+
 ## 📜 Credits
 This project is an enhanced version of the original work by **0x7c13 (Jiaqi Liu)**.
 Original Repository: [0x7c13/UnityEditor-DarkMode](https://github.com/0x7c13/UnityEditor-DarkMode)
