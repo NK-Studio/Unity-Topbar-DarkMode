@@ -10,7 +10,8 @@ Windows 환경의 유니티 에디터 상단 바(Title Bar, Menu Bar)를 세련�
 
 ## 📸 Preview
 
-<img width="3839" height="2053" alt="image" src="https://github.com/user-attachments/assets/0a69945c-9a0f-477c-9597-d72bce63d61b" />
+<img width="3146" height="1936" alt="image" src="https://github.com/user-attachments/assets/a4de46da-11ee-46d9-bce1-f02c72b78779" />
+
 
 
 
