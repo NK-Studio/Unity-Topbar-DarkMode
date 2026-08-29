@@ -2,9 +2,15 @@ using System.Runtime.InteropServices;
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_6000_5_OR_NEWER
+using Unity.Scripting.LifecycleManagement;
+#endif
+
 namespace UnityTopbarDarkMode
 {
+#if !UNITY_6000_5_OR_NEWER
     [InitializeOnLoad]
+#endif
     public static class ThemeChangePersistentDetector
     {
         private const string STATE_KEY = "MyTool_LastProSkinState";
@@ -14,6 +20,19 @@ namespace UnityTopbarDarkMode
         private static extern void SetThemeMode(bool isDark);
 #endif
 
+#if UNITY_6000_5_OR_NEWER
+
+        [OnCodeInitializing]
+        private static void Initialize()
+        {
+#if UNITY_EDITOR_WIN
+            ApplyCurrentTheme();
+            CheckTheme();
+#endif
+        }
+
+#else
+
         static ThemeChangePersistentDetector()
         {
 #if UNITY_EDITOR_WIN
@@ -22,6 +41,8 @@ namespace UnityTopbarDarkMode
             CheckTheme();
 #endif
         }
+
+#endif
 
 #if UNITY_EDITOR_WIN
         private static void CheckTheme()
