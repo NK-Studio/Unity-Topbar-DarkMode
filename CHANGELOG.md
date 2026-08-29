@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2026-08-29
+### Fixed
+- 플랫폼별 DLL 호출 처리 개선: UnityEditorDarkMode 네이티브 DLL 호출이 Windows Editor에서만 수행되도록 UNITY_EDITOR_WIN 조건부 컴파일을 추가했습니다. 이를 통해 macOS 등 비Windows 환경에서 발생하던 DLL 로드 실패 경고를 방지합니다.
+
 ## [1.2.0] - 2026-04-10
 
 ### Improved
