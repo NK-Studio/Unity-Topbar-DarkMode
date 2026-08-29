@@ -1,6 +1,6 @@
 {
   "name": "com.nkstudio.unitytopbardarkmode",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "displayName": "Unity Editor Dark Mode",
   "description": "Modern Deep Dark theme for Unity Editor title bar and menus. Enhanced version of the original UnityEditor-DarkMode.",
   "unity": "6000.2",

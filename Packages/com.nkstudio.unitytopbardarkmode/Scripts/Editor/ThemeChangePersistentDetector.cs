@@ -9,16 +9,21 @@ namespace UnityTopbarDarkMode
     {
         private const string STATE_KEY = "MyTool_LastProSkinState";
 
+#if UNITY_EDITOR_WIN
         [DllImport("UnityEditorDarkMode", EntryPoint = "SetThemeMode")]
         private static extern void SetThemeMode(bool isDark);
+#endif
 
         static ThemeChangePersistentDetector()
         {
+#if UNITY_EDITOR_WIN
             // 에디터 시작 시 현재 테마를 DLL에 즉시 반영
             ApplyCurrentTheme();
             CheckTheme();
+#endif
         }
 
+#if UNITY_EDITOR_WIN
         private static void CheckTheme()
         {
             bool currentIsPro = EditorGUIUtility.isProSkin;
@@ -55,5 +60,6 @@ namespace UnityTopbarDarkMode
                 Debug.LogWarning($"[ThemeDetector] DLL 호출 실패: {e.Message}");
             }
         }
+#endif
     }
 }
